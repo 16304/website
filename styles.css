@@ -1,0 +1,167 @@
+body {
+    background-color: hsl(0, 0%, 0%);
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif
+    margin: 0px;
+    overflow-y: scroll;
+}
+h1 {
+    color: rgb(0, 0, 0);
+    font-size: 42px;
+    text-decoration: underline;
+    text-decoration-color: black;
+    text-align: center;
+}
+.logo {
+    max-width: 100px;
+    margin-left: 30px;
+}
+.main-header {
+    display: flex;
+    flex-direction: row;
+    background-color: #087a69;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.shop-nav {
+    width: 100%;
+    background-color:#ffffff;
+    display: flex;
+    flex-direction: row;
+    padding-left: 30px;
+    flex-wrap: wrap;
+}
+.shop-nav a {
+    color: #000000;
+    text-decoration: none;
+    padding: 10px;
+}
+.shop-nav a:hover {
+    background-color: #1ade82;
+    color: #eaeaea;
+}
+.user-nav a {
+    font-size: 32pt;
+    text-decoration: none;
+    color: #00ffee;
+}
+.user-nav {
+    margin-right: 30px;
+}
+.search {
+    display: flex;
+    min-width: 400px;
+
+}
+.search input {
+    flex: 1;
+    padding: 10px;
+}
+.slide {
+    background-color: #06e4fd;
+    min-height: 50vh;
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.slide:nth-child(1) {
+    background-image: url("/images/slides/pexels-rethaferguson-3621960.jpg");
+    background-color: rgb(33, 180, 202);
+}
+.slide:nth-child(2) {
+    background-color: aquamarine;
+}
+.slide h2 {
+    color: white;
+    font-size: 6em;
+    text-shadow: 0px 0px 1px black;
+    margin: 12pt auto;
+}
+.slide-button {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 12pt;
+    border-radius: 8pt;
+}
+.content {
+   margin: 3em auto;
+   max-width: 80vw;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   gap: 12pt;
+}
+.card img {
+    max-width: 100%;
+}
+.card {
+    flex: 1;
+    min-width: 300px;
+    background-color: #eeeeee;
+    border: 1px solid black;
+    border-radius: 6pt;
+    overflow: hidden;
+}
+.card-content {
+    padding: 12pt;
+}
+
+.banner {
+    width: 100%;
+    background: linear-gradient( to right, rgb(10, 231, 255),rgb(7, 138, 101));
+    min-height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 12pt;
+}
+.social a {
+    text-decoration: none;
+    font-size: 18pt;
+    color: black;
+}
+.main-footer {
+    min-height: 20vh;
+    background-color: #eeeeee;
+    padding: 12pt;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.footer-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 16pt;
+}
+.footer-nav a {
+    color: black;
+    text-decoration: none;
+}
+@media screen and (max-width:480px) {
+    .shop-nav {
+        flex-direction: column;
+    }
+    .logo {
+        max-width: 60px;
+    }.slide {
+    position: relative;
+}
+    .slide h2 {
+        font-size: 3em;
+    }
+}
+End of styles.css

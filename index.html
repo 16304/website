@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Progear Hub</title>
+    <link rel="icon" href="icon.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=person,shopping_cart,storefront" />
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+
+<body>
+    <header class="main-header">
+        <img class="logo" src="photos/mountainlogo.png">
+        <form class="search">
+            <input type="search" placeholder="search for a product">
+            <button>
+                <img src="photos/search_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png">
+            </button>
+        </form>
+        <nav class="user-nav">
+            <a href="#">
+                <span class="material-symbols-outlined">
+                    storefront
+                </span>
+            </a>
+            <a href="#">
+                <span class="material-symbols-outlined">
+                    person
+                </span>
+            </a>
+            <a href="#">
+                <span class="material-symbols-outlined">
+                    shopping_cart
+                </span>
+            </a>
+        </nav>
+        <nav class="shop-nav">
+            <a href="#">Snows</a>
+            <a href="#">Surf</a>
+            <a href="#">Skate</a>
+            <a href="#">Brands</a>
+            <a href="#">Clearance</a>
+        </nav>
+    </header>
+    <!-- carousel -->
+    <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true }'>
+        <div class="slide">
+            <h2>Black Friday Sale</h2>
+            <a href="#" class="slide-button">Shop Black Friday</a>
+            </div>
+        
+
+        <div class="slide">
+            <img src="/photos/pexels-brett-sayles-3759249.jpg"  alt="skate bowl">   
+        </div>
+        <div class="slide">
+            <img src="/photos/pexels-freenwrld-1635086.jpg" alt="snow air spine">
+        </div>
+        <div class="slide">
+            <img src="/photos/pexels-pixabay-390051.jpg"    alt="surf floater">  
+        </div>
+    </div>
+    <main class="content">
+        <div class="card">
+            <img src="/photos/burton.png" alt="snowboardburton">
+            <div class="card-content">
+                <h3>Snow</h3>
+                <a href="#" class="card-button">Shop Snowboarding</a>
+            </div>
+        </div>
+         <div class="card">
+            <img src="/photos/chemistry.png " alt="surfboard">  
+            <div class="card-content">
+                <h3>Surf</h3>
+                <a href="#" class="card-button">Shop Surfing</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="/photos/deathwish.png" alt="skateboard">
+            <div class="card-content">
+                <h3>Skate</h3>
+                <a href="#" class="card-button">Shop Skateboarding</a>
+            </div>
+        </div>
+        <div class="banner">
+            <h2>Sale</h2>
+            <a href="#">Shop Sale<s/a>
+        </div>  
+    </main>
+    <footer class="main-footer">
+        <nav class="social">
+            <a href="https://facebook.com">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="https://instagram.com">
+                <i class="fa-brands fa-square-instagram"></i>
+            </a>
+            <a href="https://x.com">
+                <i class="fa-brands fa-square-x-twitter"></i>
+            </a>
+            <a href="https://linkedin.com">
+                <i class="fa-brands fa-square-linkedin"></i>
+            </a>
+        </nav>
+        <nav class="footer-nav">
+            <a href="#">Contact</a>
+            <a href="#">Terms</a>
+            <a href="#">Support</a>
+            <a href="#">Policies</a>
+        </nav>
+    </footer>
+</body>
+
+</html>
