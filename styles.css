@@ -24,6 +24,53 @@ h1 {
     align-items: center;
     flex-wrap: wrap;
 }
+  /* Only affect the contact form page */
+    
+#contact-page {
+    display: flex;
+    justify-content: center;   /* center horizontally */
+    align-items: center;       /* center vertically */
+    height: 100vh;
+    background-color: #f0f0f0; /* optional */
+}
+
+/* Only style this form container */
+#contact-page .form-container {
+    width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+/* Only style inputs inside this form */
+#contact-page .form-container input[type="text"],
+#contact-page .form-container input[type="email"],
+#contact-page .form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Only style submit button inside this form */
+#contact-page .form-container input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+}
+
+#contact-page .form-container input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
 .shop-nav {
     width: 100%;
     background-color:#ffffff;
@@ -248,5 +295,6 @@ main {
     .slide h2 {
         font-size: 3em;
     }
+  
 }
 End of styles.css
