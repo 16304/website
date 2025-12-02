@@ -59,6 +59,7 @@ h1 {
     padding: 10px;
 }
 .slide {
+    /*
     background-color: #06e4fd;
     min-height: 50vh;
     min-width: 100%;
@@ -69,7 +70,22 @@ h1 {
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+        */
+    
+    width: 100%;
+    height: 400px; 
+    overflow: hidden; 
+    position: relative;
+    
+
 }
+.slide img {
+        width: 70%;
+        height: 180%;
+        object-fit: cover; /* keeps image inside, fills area */
+        display: block;
+}
+
 .slide:nth-child(1) {
     background-image: url("/images/slides/pexels-rethaferguson-3621960.jpg");
     background-color: rgb(33, 180, 202);
@@ -112,8 +128,77 @@ h1 {
 .card-content {
     padding: 12pt;
 }
+/* skate-styles.css */
 
-.banner {
+/* Container for all cards (optional: center cards on page) */
+main {
+    text-align: center; /* center heading, paragraph, and cards */
+    padding: 20px;
+}
+
+/* Card styling */
+.card {
+    width: 200px; /* width of each card */
+    border: 1px solid #ccc; /* light border */
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 15px;
+    display: inline-block; /* place cards side by side */
+    vertical-align: top;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* subtle shadow */
+    background-color: #fff; /* optional card background */
+}
+
+    /* Image styling inside card */
+    .card img {
+        width: 120px; /* smaller image size */
+        height: auto; /* keep aspect ratio */
+        display: block;
+        margin: 10px auto; /* center horizontally */
+        border-radius: 6px; /* optional rounded corners */
+    }
+
+/* Card content (title and button) */
+.card-content {
+    padding: 10px;
+}
+
+    .card-content h3 {
+        margin: 5px 0;
+        font-size: 16px;
+        color: #333;
+    }
+
+/* Card button styling */
+.card-button {
+    display: inline-block;
+    margin: 5px 0 10px;
+    padding: 5px 12px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+    .card-button:hover {
+        background-color: #444; /* hover effect */
+    }
+
+/* Responsive adjustment (optional) */
+@media screen and (max-width: 600px) {
+    .card {
+        width: 150px;
+        margin: 10px;
+    }
+
+        .card img {
+            width: 100px;
+        }
+}
+
+    .banner {
     width: 100%;
     background: linear-gradient( to right, rgb(10, 231, 255),rgb(7, 138, 101));
     min-height: 20vh;
@@ -137,7 +222,7 @@ h1 {
     min-height: 20vh;
     background-color: #eeeeee;
     padding: 12pt;
-    display: flex;
+    display: flex; 
     flex-direction: column;
     justify-content: space-between;
 }
